@@ -1,0 +1,186 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+.header-container-logo-nav{
+    display: flex;
+    align-items: center;
+}
+.header-container-logo img{
+    margin: 2rem;    
+    width: 5rem;
+}
+header nav ul{
+    display:flex;
+    flex-direction: row;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    margin: 0 1rem;
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+.header-container-whatsapp img{
+    background-color: rgb(82, 79, 76);
+    border-radius: 50%;
+    box-shadow: #ffff 0 0 100px ;
+    width: 3rem;
+}
+.main-section-banner img{
+    width: 100%;
+}
+.main-section-banner-cta{
+    color: white;
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./img/back.jpg);
+    padding: 17rem;
+}
+.main-section-banner-cta h1{
+    font-size: 3rem;
+    letter-spacing:5px;
+}
+.main-section-banner-cta h2{
+    font-size: xx-large;
+    font-weight: 100;
+    letter-spacing:8px;
+}
+.main-section-banner-cta p{
+    font-size: medium;
+    font-weight: 100;
+    letter-spacing:4px;
+}
+
+.main-section-box-services{
+
+    width: 30rem;
+    height: 25rem;
+    color: white;
+    position: absolute;
+    padding: 10rem 2rem;
+    top: 40rem;
+    right: 10rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.30);
+    border: solid 1px white;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    /* box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;; */
+
+}
+
+.main-section-box-services h3, .main-section-box-services p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.main-section-box-section{
+    background-color: black;
+    width: 100%;
+    height: 50rem;
+}
+.animations{
+    padding: 3rem;
+    background-color: black;
+}
+.animation-1{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    border: solid 1px rgba(255, 255, 255, 0.815);
+    border-radius: 20%;
+    left: 25rem;
+}
+.animation-2{
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);    
+    border: solid 1px rgba(255, 255, 255, 0.815);
+    border-radius: 20%;
+    left: 35rem;
+}
+.animation-3{
+    background-color: #ffe53b;
+    background-image: linear-gradient(147deg, #ffe53b98 0%, #ff2525 74%);
+    border: solid 1px rgba(255, 255, 255, 0.815);
+    left: 15rem;
+}
+.animation-1, .animation-2, .animation-3{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    transition: 2s ease;
+    opacity: 1;
+    border-radius: 20%;
+    
+}
+.animation-2{
+    animation-name: rotate2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:cubic-bezier(0.1, 0, 0.5, 0);
+    animation-direction: alternate;
+}
+.animation-1{
+    animation-name: rotate1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:2s cubic-bezier(0.2,0.3,0.8,0.6);
+    animation-direction: alternate;
+}
+.animation-3{
+    animation-name: rotate3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:cubic-bezier(0.3,0.6,1,0.6);
+    animation-direction: alternate;
+}
+/* .animation-1:hover, .animation-2:hover, .animation-3:hover{
+    opacity: 0;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+} */
+@keyframes rotate1{
+    from{
+        transform: translateY(100%) rotate(360deg);
+        box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;;
+    }to{
+        transform: translateY(0%);
+        opacity: 0;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        
+    }
+}
+@keyframes rotate2{
+    from{
+        transform: translateY(100%) rotate(360deg);
+        box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;;
+    }to{
+        transform: translateY(0%);
+        opacity: 0;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+    }
+}
+@keyframes rotate3{
+    from{
+        transform: translateY(100%) rotate(360deg);
+        box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;;
+    }to{
+        transform: translateY(0%);
+        opacity: 0;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+    }
+}
