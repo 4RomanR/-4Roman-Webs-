@@ -4,6 +4,13 @@
     padding: 0;
     font-family: 'Quicksand', sans-serif;
 }
+:root{
+    --blue-a: #5997ac;
+    --blue-b: #a1cbdd;
+    --White-a: #eeede7;
+    --pink-a: #f7aec2;
+    --red-a: #af5166;
+}
 header{
     display: flex;
     justify-content: space-around;
