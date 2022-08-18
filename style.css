@@ -2,232 +2,140 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Quicksand', sans-serif;
-}
-:root{
-    --blue-a: #5997ac;
-    --blue-b: #a1cbdd;
-    --White-a: #eeede7;
-    --pink-a: #f7aec2;
-    --red-a: #af5166;
-    --black: #000;
+}:root{
+    font-family: 'Bad Script', cursive;
+    font-family: 'Bodoni Moda', serif;
+    font-family: 'Raleway', sans-serif;
+
+    --green1:#cad2c5;
+    --green2:#84a98c;
+    --green3:#52796f;
+    --green4:#354f52;
+    --green5:#2f3e46;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    margin: 0;
-}
-.header-container-logo-nav{
-    display: flex;
-    align-items: center;
-    margin: 2rem 2rem 0 2rem;    
-}
-.header-container-logo img{
-    margin: 0 2rem 0 2rem;    
-    width: 5rem;
-}
-header nav ul{
-    display:flex;
-    flex-direction: row;
-}
-header nav ul li{
-    list-style: none;
-}
-header nav ul li a{
-    margin: 0 2rem;
-    text-decoration: none;
-    color: white;
-    font-size: small;
-}
-.header-container-whatsapp img{
-    width: 2rem;
-    margin: 2rem 2rem 0 2rem;    
-}
-/* 
-.main-section-banner img{
+/* ----------------BACKGROUND Y GLASS---------------- */
+.background{
+    position:absolute;
+    background-image: url(https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-} */
-header, body main{
-    background-color: #00DBDE;
-    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
-}
-.main-section-banner-cta{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;    
-}
-.main-section-cta{
-    padding: 0 5rem 0 2rem;
-}
-.main-section-cta h1{
-    font-size: 3rem;
-    letter-spacing:5px;
-}
-.main-section-cta h2{
-    font-size: xx-large;
-    font-weight: 100;
-    letter-spacing:8px;
-}
-.main-section-cta p{
-    font-size: medium;
-    font-weight: 100;
-    letter-spacing:4px;
-}
-.slide1, .slide2, .slide3{  
-    width: 80%;   
-}
-/* .slide1{
-    animation-name: slide1;
-    animation-duration: 40s;
-    animation-iteration-count: infinite;   
-}
-@keyframes slide1{
-    0%{opacity: 1;}
-    29%{opacity: 1;}
-    30%{opacity: 0;}
-    100%{opacity: 0;}
-}
-.slide2{
-    animation-name: slide2;
-    animation-duration: 40s;
-    animation-iteration-count: infinite;
-}
-@keyframes slide2{
-    0%{opacity: 0;}
-    29%{opacity: 0;}
-    30%{opacity: 1;}
-    60%{opacity: 1;}
-    61%{opacity: 0;}
-    100%{opacity: 0;}
-}
-.slide3{
-    animation-name: slide3;
-    animation-duration: 40s;
-    animation-iteration-count: infinite;    
-}
-@keyframes slide3{
-    0%{opacity: 0;}
-    60%{opacity: 0;}
-    61%{opacity: 1;}
-    99%{opacity: 1;}
-    100%{opacity: 0;}
-} */
-
-.main-section-box-services{
-
-    width: 30rem;
-    height: 25rem;
-    color:var(--black);
-    position: absolute;
-    padding: 10rem 2rem;
-    top: 40rem;
-    right: 10rem;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.30);
-    border: solid 1px white;
-    backdrop-filter: blur(2px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.main-section-box-services h3, .main-section-box-services p{
-    text-align: center;
-    font-size: 1.5rem;
-}
-.main-section-box-section{
-    width: 100%;
-    height: 50rem;
-}
-.animations{
-    padding: 3rem;
-
-}
-.animation-1{
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    border: solid 1px rgba(255, 255, 255, 0.815);
-    border-radius: 20%;
-    left: 25rem;
-}
-.animation-2{
-    background-color: #85FFBD;
-    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);    
-    border: solid 1px rgba(255, 255, 255, 0.815);
-    border-radius: 20%;
-    left: 35rem;
-}
-.animation-3{
-    background-color: #ffe53b;
-    background-image: linear-gradient(147deg, #ffe53b98 0%, #ff2525 74%);
-    border: solid 1px rgba(255, 255, 255, 0.815);
-    left: 15rem;
-}
-.animation-1, .animation-2, .animation-3{
-    width: 1rem;
-    height: 1rem;
-    transition: 2s ease;
-    opacity: 1;
-    border-radius: 20%;
+    height: 100%;
+    top: 0;
+    filter: blur(2px);
     
 }
-.animation-2{
-    animation-name: rotate2;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function:cubic-bezier(0.1, 0, 0.5, 0);
-    animation-direction: alternate;
+.glass-container{
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    width: 93%;
+    height: 90%;
+    
+    display: flex;
+    flex-direction: row;
+    
+    background-color: rgba(196, 196, 196, 0.212);
+    border-radius: 20px;
+    box-shadow: 10px 10px 7px;
 }
-.animation-1{
-    animation-name: rotate1;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function:2s cubic-bezier(0.2,0.3,0.8,0.6);
-    animation-direction: alternate;
+
+/* ----------------HEADER---------------- */
+header{
+    margin: 3rem 3rem 3%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: flex-start;
 }
-.animation-3{
-    animation-name: rotate3;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function:cubic-bezier(0.3,0.6,1,0.6);
-    animation-direction: alternate;
+.burger-content img{
+    width: 30px;
+    filter: blur(0.4px);
+    margin: 0 4rem 0 0 ;
 }
-@keyframes rotate1{
-    from{
-        transform: translateY(100%) rotate(360deg);
-        box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;;
-    }to{
-        transform: translateY(0%);
-        opacity: 0;
-        width: 7rem;
-        height: 7rem;
-        border-radius: 50%;
-        
-    }
+header h1{
+    font-family: 'Bodoni Moda', serif;
+    margin-right: 0.4rem;
+    color:var(--green1);
+    font-size: medium;
 }
-@keyframes rotate2{
-    from{
-        transform: translateY(100%) rotate(360deg);
-        box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;;
-    }to{
-        transform: translateY(0%);
-        opacity: 0;
-        width: 7rem;
-        height: 7rem;
-        border-radius: 50%;
-    }
+.menu{
+    font-family: 'Bad Script', cursive;
 }
-@keyframes rotate3{
-    from{
-        transform: translateY(100%) rotate(360deg);
-        box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;;
-    }to{
-        transform: translateY(0%);
-        opacity: 0;
-        width: 6rem;
-        height: 6rem;
-        border-radius: 50%;
-    }
+.glass-container-tittle{
+    display: flex;
+    align-items: center;
+}
+
+/* ----------------CTA---------------- */
+.cta-green-content{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+}
+.cta-content{
+    width: 45%;
+}
+.cta-content h1{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 5rem;        
+    color:var(--green1);
+}
+
+.cta-content p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;        
+    color:var(--green1);
+    margin-bottom: 1rem;
+}
+.img-content{
+    width: 45%;
+}
+.img-content img{
+    width:100%;
+}
+
+.cta-content a{
+    text-decoration: none;
+    color: var(--green1);
+    background-color: rgb(36, 31, 31);
+    padding: 0.7rem 3rem;
+    box-shadow: 5px 5px 8px var(--green5);
+    opacity: 90%;
+    border-radius: 8px;
+    
+
+}
+/* ----------------ASIDE---------------- */
+.aside-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;   
+
+}
+.aside-content a{
+    text-decoration: none;
+    color: var(--green1);
+    font-size:small;    
+    margin: 2rem 0;
+    width: 5rem;
+    text-align: center;
+}
+figure img{
+    width: 20px;
+}
+
+/* ----------------FOOTER---------------- */
+footer{
+    color: var(--green1);
+    text-align: center;
+}
+.inactive-f{
+    display: none;
+    font-family: 'Bad Script', cursive;
 }
