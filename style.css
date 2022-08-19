@@ -13,7 +13,13 @@
     --green4:#354f52;
     --green5:#2f3e46;
 }
-
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-size: contain;
+}
 /* ----------------BACKGROUND Y GLASS---------------- */
 .background{
     position:absolute;
@@ -31,21 +37,20 @@
     top: 3rem;
     left: 3rem;
     width: 93%;
-    height: 90%;
+    height: 85%;
     
     display: flex;
     flex-direction: row;
-    
-    background-color: rgba(196, 196, 196, 0.212);
+    background: linear-gradient(45deg, rgba(16, 109, 16, 0.623) 50%, rgba(0, 0, 0, 0.579) 50% );    
+    /* background-color: rgba(196, 196, 196, 0.212); */
     border-radius: 20px;
-    box-shadow: 10px 10px 7px;
+    box-shadow: 10px 10px 8px;
 }
 
 /* ----------------HEADER---------------- */
 header{
-    margin: 3rem 3rem 3%;
+    margin: 3rem 3rem 0;
     display: flex;
-    /* flex-direction: column; */
     justify-content: flex-start;
 }
 .burger-content img{
@@ -66,7 +71,31 @@ header h1{
     display: flex;
     align-items: center;
 }
+/* ----------------BURGER---------------- */
+.burger-nav-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 1rem 2rem;
+    border-radius: 20px 0 0 20px ;  
 
+    background-color: rgba(0, 0, 0, 0.678);
+}
+.burger-nav-content li{
+    list-style: none;
+    margin: 2rem 0;
+}
+.burger-nav-content a{
+    font-family: 'Raleway', sans-serif;
+    font-size: small;
+    text-decoration: none;
+    color: var(--green1);
+}
 /* ----------------CTA---------------- */
 .cta-green-content{
     display: flex;
@@ -81,13 +110,13 @@ header h1{
 }
 .cta-content h1{
     font-family: 'Bodoni Moda', serif;
-    font-size: 5rem;        
+    font-size: 250%;        
     color:var(--green1);
 }
 
 .cta-content p{
     font-family: 'Raleway', sans-serif;
-    font-size: 1rem;        
+    font-size: 100%;        
     color:var(--green1);
     margin-bottom: 1rem;
 }
@@ -95,7 +124,7 @@ header h1{
     width: 45%;
 }
 .img-content img{
-    width:100%;
+    width:80%;
 }
 
 .cta-content a{
@@ -128,12 +157,18 @@ header h1{
 }
 figure img{
     width: 20px;
+    margin-top: 2rem;
 }
 
 /* ----------------FOOTER---------------- */
 footer{
     color: var(--green1);
-    text-align: center;
+    text-align: start;
+    text-shadow: 5px 5px 7px var(--green5);
+    margin: 0 3rem;
+}
+footer p{
+    font-family: 'Bodoni Moda', serif;
 }
 .inactive-f{
     display: none;
