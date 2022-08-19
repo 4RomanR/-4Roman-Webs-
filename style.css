@@ -23,14 +23,15 @@ body{
 /* ----------------BACKGROUND Y GLASS---------------- */
 .background{
     position:absolute;
-    background-image: url(https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb);
+    background-image: linear-gradient(45deg, #0e461b 0%, #85ffae 100%);
+
+    /* background-image: url(https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb); */
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
     top: 0;
     filter: blur(2px);
-    
 }
 .glass-container{
     position: absolute;
@@ -41,10 +42,10 @@ body{
     
     display: flex;
     flex-direction: row;
-    background: linear-gradient(45deg, rgba(16, 109, 16, 0.623) 50%, rgba(0, 0, 0, 0.579) 50% );    
+    background: linear-gradient(45deg, #000 65%, rgb(0, 207, 0) 50% );    
     /* background-color: rgba(196, 196, 196, 0.212); */
     border-radius: 20px;
-    box-shadow: 10px 10px 8px;
+    box-shadow: 0 0 5px;
 }
 
 /* ----------------HEADER---------------- */
@@ -96,6 +97,9 @@ header h1{
     text-decoration: none;
     color: var(--green1);
 }
+.inactive{
+    display: none;
+}
 /* ----------------CTA---------------- */
 .cta-green-content{
     display: flex;
@@ -105,8 +109,12 @@ header h1{
     margin: 0;
     height: 100%;
 }
-.cta-content{
-    width: 45%;
+.cta-content img{
+    position: absolute;
+    opacity: 5%;
+    width: 30%;
+    top: 5rem;
+
 }
 .cta-content h1{
     font-family: 'Bodoni Moda', serif;
@@ -116,7 +124,7 @@ header h1{
 
 .cta-content p{
     font-family: 'Raleway', sans-serif;
-    font-size: 100%;        
+    font-size: 80%;        
     color:var(--green1);
     margin-bottom: 1rem;
 }
@@ -125,15 +133,16 @@ header h1{
 }
 .img-content img{
     width:80%;
+    filter: drop-shadow(0 0 3px);
+    margin: 0 1rem;
 }
 
 .cta-content a{
     text-decoration: none;
     color: var(--green1);
-    background-color: rgb(36, 31, 31);
+    background-color: var(--green4);
     padding: 0.7rem 3rem;
-    box-shadow: 5px 5px 8px var(--green5);
-    opacity: 90%;
+    /* box-shadow: 0 0 3px var(--green3); */
     border-radius: 8px;
     
 
@@ -164,11 +173,11 @@ figure img{
 footer{
     color: var(--green1);
     text-align: start;
-    text-shadow: 5px 5px 7px var(--green5);
-    margin: 0 3rem;
+    margin: 1rem 3rem;
 }
 footer p{
-    font-family: 'Bodoni Moda', serif;
+    font-family: 'Bad Script', cursive;
+    font-size: 12px;
 }
 .inactive-f{
     display: none;
