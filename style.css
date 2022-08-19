@@ -31,7 +31,6 @@ body{
     width: 100%;
     height: 100%;
     top: 0;
-    filter: blur(2px);
 }
 .glass-container{
     position: absolute;
@@ -100,8 +99,11 @@ header h1{
 .inactive{
     display: none;
 }
+.inactive-cta, .cta-content{
+    display: none;
+}
 /* ----------------CTA---------------- */
-.cta-green-content{
+.cta-green-content, .cta-red-content, .cta-blue-content{
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
@@ -156,8 +158,7 @@ header h1{
     margin-left: 2rem;   
 
 }
-.aside-content a{
-    text-decoration: none;
+.aside-content p{
     color: var(--green1);
     font-size:small;    
     margin: 2rem 0;
