@@ -3,11 +3,15 @@
 //BURGER
 var burgerMenu = document.querySelector('.burger-nav-content');
 var imgBurger  = document.querySelector('.burger-img');
-
+var closeOnBody = document.querySelector('.clickclose');
 imgBurger.addEventListener('click', openBurgerMenu);
-
+closeOnBody.addEventListener('click', closeBurgerMenu);
 function openBurgerMenu (){
     burgerMenu.classList.toggle('inactive');
+    
+}
+function closeBurgerMenu (){
+    burgerMenu.classList.add('inactive');
 }
 
 }())
