@@ -23,7 +23,7 @@ body{
 /* ----------------BACKGROUND Y GLASS---------------- */
 .background{
     position:absolute;
-    background-image: linear-gradient(45deg, #0e461b 0%, #85ffae 100%);
+    background-image: linear-gradient(45deg, #122a18 0%, #0da87c 100%);
 
     /* background-image: url(https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb); */
     background-repeat: no-repeat;
@@ -99,7 +99,7 @@ header h1{
 .inactive{
     display: none;
 }
-.inactive-cta, .cta-content{
+.inactcta{
     display: none;
 }
 /* ----------------CTA---------------- */
@@ -130,10 +130,10 @@ header h1{
     color:var(--green1);
     margin-bottom: 1rem;
 }
-.img-content{
+.img-content-green, .img-content-red{
     width: 45%;
 }
-.img-content img{
+.img-content-green img, .img-content-red img{
     width:80%;
     filter: drop-shadow(0 0 3px);
     margin: 0 1rem;
@@ -149,7 +149,15 @@ header h1{
     
 
 }
+
 /* ----------------ASIDE---------------- */
+.cta-change-1, .cta-change-2, .cta-change-3{
+    cursor: pointer;
+    background-color: var(--green1);
+    width: 1px;
+    border-radius:10px;
+}
+
 .aside-content{
     display: flex;
     flex-direction: column;
@@ -159,11 +167,15 @@ header h1{
 
 }
 .aside-content p{
-    color: var(--green1);
-    font-size:small;    
+
+
     margin: 2rem 0;
-    width: 5rem;
     text-align: center;
+    background-color: var(--green1);
+    width: 5px;
+    height: 5px;
+    border-radius:5px;
+
 }
 figure img{
     width: 20px;
@@ -173,7 +185,7 @@ figure img{
 /* ----------------FOOTER---------------- */
 footer{
     color: var(--green1);
-    text-align: start;
+    text-align: center;
     margin: 1rem 3rem;
 }
 footer p{
