@@ -19,39 +19,15 @@ body{
     background-position: center center;
     background-size: cover;
     background-size: contain;
-}
-/* ----------------BACKGROUND Y GLASS---------------- */
-.background{
-    position:absolute;
-    background-image: linear-gradient(45deg, #122a18 0%, #0da87c 100%);
-
-    /* background-image: url(https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    top: 0;
-}
-.glass-container{
-    position: absolute;
-    top: 3rem;
-    left: 3rem;
-    width: 93%;
-    height: 85%;
-    
-    display: flex;
-    flex-direction: row;
-    background: linear-gradient(45deg, #000 65%, rgb(0, 207, 0) 50% );    
-    /* background-color: rgba(196, 196, 196, 0.212); */
-    border-radius: 20px;
-    box-shadow: 0 0 5px;
+    background-color: black;
 }
 
 /* ----------------HEADER---------------- */
 header{
-    margin: 3rem 3rem 0;
+    margin: 5rem 5rem 0; 
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
 }
 .burger-content img{
     width: 30px;
@@ -67,7 +43,7 @@ header h1{
 .menu{
     font-family: 'Bad Script', cursive;
 }
-.glass-container-tittle{
+.glass-container-logo{
     display: flex;
     align-items: center;
 }
@@ -78,15 +54,13 @@ header h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 5rem;
-    left: 0;
-    height: 70%;
-    padding: 0 2rem 0 2rem;
+    top: 7rem;
+    left: 5rem;
+    height: 80%;
+    padding: 0 4rem 0;
     border-radius: 20px 0 0 20px;
-    background-image: linear-gradient(0deg, #d9afd9d4 0%, #97dae1dd 100%);
+    background-image: linear-gradient(0deg, #d9afd9eb 0%, #97dae1f2 100%);
   
-
-
 }
 .burger-nav-content li{
     list-style: none;
@@ -105,14 +79,22 @@ header h1{
     display: none;
 }
 /* ----------------CTA---------------- */
-.cta-green-content, .cta-red-content, .cta-blue-content{
+.main-cta-container{
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* .cta-green-content, .cta-red-content, .cta-blue-content{
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
     height: 100%;
-}
+} */
+        /* ------------INFO------------ */
+
 .cta-content img{
     position: absolute;
     opacity: 5%;
@@ -122,58 +104,57 @@ header h1{
 }
 .cta-content h1{
     font-family: 'Bodoni Moda', serif;
-    font-size: 250%;        
     color:var(--green1);
+    font-size: 50px;
 }
 
 .cta-content p{
     font-family: 'Raleway', sans-serif;
     font-size: 80%;        
     color:var(--green1);
-    margin-bottom: 1rem;
+    margin: 1.5rem 0;
 }
-.img-content-green, .img-content-red{
-    width: 45%;
-}
-.img-content-green img, .img-content-red img{
-    width:80%;
-    filter: drop-shadow(0 0 3px);
-    margin: 0 1rem;
-}
-
 .cta-content a{
     text-decoration: none;
     color: var(--green1);
     background-color: var(--green4);
-    padding: 0.7rem 3rem;
+    padding: 1rem 3rem;
     /* box-shadow: 0 0 3px var(--green3); */
     border-radius: 8px;
+}
+        /* ------------IMG------------ */
+.img-content-green, .img-content-red{
     
-
+}
+.img-content-green img, .img-content-red img{
+    width:100%;
+    filter: drop-shadow(0 0 3px);
+    margin: 0 1rem;
 }
 
 /* ----------------ASIDE---------------- */
+.aside-content{
+    position: absolute;
+    top: 15rem;
+    left: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
 .cta-change-1, .cta-change-2, .cta-change-3{
     cursor: pointer;
     background-color: var(--green1);
     width: 1px;
     border-radius:10px;
 }
-
-.aside-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2rem;   
-
-}
-.aside-content p{
-    margin: 2rem 0;
+.aside-content p{   
+    margin: 3rem 0;
     text-align: center;
     background-color: var(--green1);
-    width: 5px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
     border-radius:5px;
 
 }
@@ -181,6 +162,7 @@ figure img{
     width: 20px;
     margin-top: 2rem;
 }
+
 
 /* ----------------FOOTER---------------- */
 footer{
